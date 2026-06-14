@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Groucho Jones — Science Fiction</title>
+<meta name="description" content="Groucho Jones writes literary science fiction. The Thousand Worlds Cycle. The ebooks are free.">
+
+<link rel="canonical" href="https://6jones.world/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Groucho Jones — Science Fiction">
+<meta property="og:description" content="Literary science fiction. The Thousand Worlds Cycle. The ebooks are free.">
+<meta property="og:url" content="https://6jones.world/">
+<meta property="og:site_name" content="Groucho Jones">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Groucho Jones — Science Fiction">
+<meta name="twitter:description" content="Literary science fiction. The Thousand Worlds Cycle. The ebooks are free.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Groucho Jones",
+  "alternateName": "Steven Jones",
+  "url": "https://6jones.world/",
+  "description": "Literary science fiction author. The Thousand Worlds Cycle.",
+  "sameAs": [
+    "https://sjones.bio/",
+    "https://www.amazon.com/stores/Groucho-Jones/author/B07YQGSTRN",
+    "https://medium.com/@6jones"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --ink: #14120e;
+    --ink-raised: #1b1813;
+    --ivory: #e9e3d6;
+    --dim: #8d8779;
+    --gorse: #c2a14d;
+    --hairline: #2e2a22;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { background: var(--ink); }
+
+  body {
+    font-family: "EB Garamond", Georgia, serif;
+    background: var(--ink);
+    color: var(--ivory);
+    font-size: 20px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 96px 28px 72px;
+  }
+
+  /* ---------- the mark ---------- */
+  .mark {
+    display: block;
+    margin-bottom: 56px;
+  }
+  .mark svg { display: block; overflow: visible; }
+  .mark path {
+    fill: none;
+    stroke: var(--gorse);
+    stroke-width: 1.1;
+    stroke-linecap: round;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .mark svg {
+      animation: turn 240s linear infinite;
+      transform-origin: 50% 50%;
+    }
+    @keyframes turn { to { transform: rotate(360deg); } }
+  }
+
+  /* ---------- type ---------- */
+  h1 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  }
+  .subtitle {
+    font-style: italic;
+    font-size: 24px;
+    color: var(--dim);
+    margin-top: 10px;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--hairline);
+    margin: 56px 0;
+  }
+
+  p { margin-bottom: 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  a {
+    color: var(--gorse);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(194, 161, 77, 0.45);
+    transition: text-decoration-color 120ms ease;
+  }
+  a:hover { text-decoration-color: var(--gorse); }
+  a:focus-visible {
+    outline: 1.5px solid var(--gorse);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  .section-label {
+    font-style: italic;
+    font-size: 23px;
+    color: var(--dim);
+    margin-bottom: 28px;
+  }
+
+  /* ---------- book plates ---------- */
+  .plate {
+    border: 1px solid var(--hairline);
+    background: var(--ink-raised);
+    padding: 30px 32px 28px;
+    margin-bottom: 22px;
+  }
+  .plate-series {
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--dim);
+    font-weight: 500;
+  }
+  .plate h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 8px 0 10px;
+  }
+  .plate .desc {
+    color: var(--ivory);
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+  .plate .links {
+    font-size: 18px;
+  }
+  .plate .links a { margin-right: 18px; }
+  .plate .links .free {
+    font-weight: 600;
+  }
+  .plate.forthcoming { opacity: 0.62; }
+  .plate.forthcoming h3 { color: var(--dim); }
+
+  /* ---------- mailing list ---------- */
+  .list-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .list-form input[type="email"] {
+    flex: 1 1 260px;
+    font-family: inherit;
+    font-size: 19px;
+    color: var(--ivory);
+    background: var(--ink-raised);
+    border: 1px solid var(--hairline);
+    padding: 12px 16px;
+  }
+  .list-form input[type="email"]::placeholder { color: var(--dim); font-style: italic; }
+  .list-form input[type="email"]:focus-visible {
+    outline: 1.5px solid var(--gorse);
+    outline-offset: 2px;
+  }
+  .list-form button {
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--ink);
+    background: var(--gorse);
+    border: 0;
+    padding: 12px 28px;
+    cursor: pointer;
+  }
+  .list-form button:hover { background: #d2b15e; }
+  .list-form button:focus-visible {
+    outline: 1.5px solid var(--ivory);
+    outline-offset: 2px;
+  }
+
+  /* ---------- footer ---------- */
+  footer {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--hairline);
+    color: var(--dim);
+    font-size: 17px;
+  }
+  footer a { color: var(--dim); }
+  footer a:hover { color: var(--gorse); }
+
+  @media (max-width: 480px) {
+    body { font-size: 18px; }
+    .page { padding-top: 64px; }
+    h1 { font-size: 36px; }
+    .plate { padding: 24px 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <span class="mark" aria-hidden="true">
+    <svg id="spiral" width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <path id="spiralPath" d=""/>
+    </svg>
+  </span>
+
+  <h1>Groucho Jones</h1>
+  <p class="subtitle">Science fiction.</p>
+
+  <hr>
+
+  <p>I write the Thousand Worlds Cycle — literary science fiction about minds at
+  war, and a cosmos that may be a question someone is asking. Two trilogies.
+  Three books published, three on their way.</p>
+
+  <p>The ebooks are free. They always will be. Take them.</p>
+
+  <hr>
+
+  <p class="section-label">Books</p>
+
+  <div class="plate">
+    <p class="plate-series">The Water Bear Trilogy</p>
+    <h3>The Water Bear</h3>
+    <p class="desc">&#9670; One line, in your words.</p>
+    <p class="links">
+      <a class="free" href="#">Read free&ensp;—&ensp;epub</a>
+      <a href="https://www.amazon.com/Water-Bear-Groucho-Jones/dp/1686446675">Paperback</a>
+    </p>
+  </div>
+
+  <div class="plate">
+    <p class="plate-series">The Spiral · Book One</p>
+    <h3>Escape From Samsara</h3>
+    <p class="desc">&#9670; One line, in your words.</p>
+    <p class="links">
+      <a class="free" href="#">Read free&ensp;—&ensp;epub</a>
+      <a href="https://www.amazon.com.au/Escape-Samsara-Spiral-Thousand-Worlds-ebook/dp/B0GRYCN5FN">Paperback</a>
+    </p>
+  </div>
+
+  <div class="plate forthcoming">
+    <p class="plate-series">The Spiral · Book Two</p>
+    <h3>The Spiral Tribe</h3>
+    <p class="desc">Forthcoming. Join the list below to hear when it lands.</p>
+  </div>
+
+  <hr>
+
+  <p class="section-label">The Spiral Tribe</p>
+
+  <p>The trilogy is named for a sound system. In 1992 I was at Castlemorton
+  Common with the Spiral Tribe, and the names in these books — Kat, Waldo, Ke2,
+  Atomic — belong to real people from that posse. <em>Escape From Samsara</em>
+  and <em>Return to the Source</em> were parties before they were novels.</p>
+
+  <p><a href="#">The whole story&ensp;→</a></p>
+
+  <hr>
+
+  <p class="section-label">The list</p>
+
+  <p>New books and chapters, by email. Nothing else, ever.</p>
+
+  <div class="list-form">
+    <input type="email" placeholder="your@email" aria-label="Email address">
+    <button type="button">Join</button>
+  </div>
+
+  <footer>
+    <p>Published by Dream Radio.<br>
+    Groucho Jones is the pen name of
+    <a href="https://sjones.bio/">Steven Jones</a>.<br>
+    Fremantle, Western Australia.</p>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var cx = 36, cy = 36, turns = 3.6, steps = 320;
+    var maxT = turns * 2 * Math.PI;
+    var d = "";
+    for (var i = 0; i <= steps; i++) {
+      var t = (i / steps) * maxT;
+      var r = 2.55 * t / (2 * Math.PI) * 2.6;
+      var x = cx + r * Math.cos(t);
+      var y = cy + r * Math.sin(t);
+      d += (i === 0 ? "M" : "L") + x.toFixed(2) + " " + y.toFixed(2);
+    }
+    document.getElementById("spiralPath").setAttribute("d", d);
+  })();
+</script>
+</body>
+</html>
