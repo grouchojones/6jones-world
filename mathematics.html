@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Mathematics — Groucho Jones</title>
+<meta name="description" content="On the impossibility of criminalising a beat. The Criminal Justice Act 1994, expressed as mathematics.">
+
+<link rel="canonical" href="https://6jones.world/mathematics.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Mathematics — On the Impossibility of Criminalising a Beat">
+<meta property="og:description" content="The Criminal Justice Act 1994 outlawed periodicity. Here is the proof.">
+<meta property="og:url" content="https://6jones.world/mathematics.html">
+<meta property="og:site_name" content="Groucho Jones">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<script>
+MathJax = {
+  tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+  svg: { fontCache: 'global' },
+  startup: { typeset: true }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
+<style>
+  :root {
+    --ink: #14120e;
+    --ink-raised: #1b1813;
+    --ivory: #e9e3d6;
+    --dim: #8d8779;
+    --gorse: #c2a14d;
+    --hairline: #2e2a22;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { background: var(--ink); }
+
+  body {
+    font-family: "EB Garamond", Georgia, serif;
+    background: var(--ink);
+    color: var(--ivory);
+    font-size: 20px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 96px 28px 72px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  }
+
+  .subtitle {
+    font-style: italic;
+    font-size: 24px;
+    color: var(--dim);
+    margin-top: 10px;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--hairline);
+    margin: 56px 0;
+  }
+
+  p { margin-bottom: 1.1em; }
+  p:last-child { margin-bottom: 0; }
+
+  .section-label {
+    font-style: italic;
+    font-size: 23px;
+    color: var(--dim);
+    margin-bottom: 28px;
+    margin-top: 48px;
+  }
+
+  .standout {
+    font-size: 22px;
+    font-style: italic;
+    margin: 2em 0;
+  }
+
+  .equation {
+    margin: 1.8em 0;
+    padding: 20px 24px;
+    background: var(--ink-raised);
+    border: 1px solid var(--hairline);
+    overflow-x: auto;
+  }
+
+  mjx-container {
+    color: var(--ivory) !important;
+  }
+
+  a {
+    color: var(--gorse);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(194, 161, 77, 0.45);
+    transition: text-decoration-color 120ms ease;
+  }
+  a:hover { text-decoration-color: var(--gorse); }
+  a:focus-visible {
+    outline: 1.5px solid var(--gorse);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  .back {
+    display: inline-block;
+    margin-top: 2em;
+    font-size: 18px;
+  }
+
+  footer {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--hairline);
+    color: var(--dim);
+    font-size: 17px;
+  }
+  footer a { color: var(--dim); }
+  footer a:hover { color: var(--gorse); }
+
+  @media (max-width: 480px) {
+    body { font-size: 18px; }
+    .page { padding-top: 64px; }
+    h1 { font-size: 36px; }
+    .equation { padding: 16px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>The Mathematics</h1>
+  <p class="subtitle">On the Impossibility of Criminalising a Beat</p>
+
+  <hr>
+
+  <p>The Criminal Justice and Public Order Act 1994 defined music, for the purposes of prosecution, as sounds "wholly or predominantly characterised by the emission of a succession of repetitive beats."</p>
+
+  <p>The rhythm it tried to criminalise was never mathematically defined. The phrase was left deliberately vague. But if you derive a mathematical expression for the kind of rhythm that prosecutors targeted - and that the Spiral Tribe played - here is how it looks.</p>
+
+  <p class="section-label">Tempo as frequency</p>
+
+  <p>The music in question - breakbeat hardcore, free tekno - typically ran at 140 to 160 beats per minute, significantly faster than house music or rock at around 120 BPM.</p>
+
+  <p>The fundamental frequency of a beat at a given tempo is:</p>
+
+  <div class="equation">
+    \[ f = \frac{\text{BPM}}{60} \; \text{Hz} \]
+  </div>
+
+  <p>At 150 BPM:</p>
+
+  <div class="equation">
+    \[ f = \frac{150}{60} = 2.5 \; \text{Hz} \]
+  </div>
+
+  <p>The kick drum is hitting 2.5 times per second - faster than the human resting heart rate at roughly 1.2 Hz. The body feels this before the mind processes it.</p>
+
+  <p class="section-label">The beat as a periodic function</p>
+
+  <p>A kick drum pattern at 150 BPM can be expressed as a Dirac comb - a series of impulses at regular intervals:</p>
+
+  <div class="equation">
+    \[ x(t) = \sum_{n=-\infty}^{\infty} \delta(t - nT) \]
+  </div>
+
+  <p>Where \( T = 60 / \text{BPM} \) seconds (at 150 BPM, \( T = 0.4 \) seconds) and \( \delta \) is the impulse - the beat.</p>
+
+  <p>But a kick drum isn't a pure impulse. It has a decaying envelope - a thud that fades:</p>
+
+  <div class="equation">
+    \[ x(t) = A \, e^{-\alpha t} \sin(2\pi f_0 \, t) \cdot \sum_{n} \delta(t - nT) \]
+  </div>
+
+  <p>Where \( f_0 \) is the kick's fundamental frequency, typically 50-80 Hz. The sine gives the tone. The exponential gives the decay. Each kick is a small explosion, damped by physics.</p>
+
+  <p class="section-label">Syncopation as phase shift</p>
+
+  <p>The law wasn't targeting a metronome. It was targeting syncopated repetition: kick on 1 and 3, snare on 2 and 4, hi-hats shuffling in between.</p>
+
+  <p>A breakbeat pattern can be expressed as:</p>
+
+  <div class="equation">
+    \[ y(t) = \text{kick}(t) \cdot \sum_{n} \delta(t - 2nT) \;+\; \text{snare}(t) \cdot \sum_{n} \delta(t - (2n+1)T + \varphi) \]
+  </div>
+
+  <p>Where \( \varphi \) is a small phase shift - the snare's slight lag or push. Musicians call it the pocket. Mathematicians call it a phase offset. It is what makes a rhythm feel human rather than mechanical.</p>
+
+  <p>Layer multiple loops of different lengths and you get polyrhythm:</p>
+
+  <p>Loop A: 4 beats. Loop B: 6 beats.</p>
+
+  <p>The combined pattern repeats every \( \text{LCM}(4, 6) = 12 \) beats. The listener perceives an evolving, hypnotic groove - exactly what Parliament found threatening.</p>
+
+  <p class="section-label">The punchline</p>
+
+  <p>By forbidding "a succession of repetitive beats," the Act inadvertently described virtually all music. A waltz is three quarter-notes per bar, repeated - a periodic function. A military march is periodic. A rock drumbeat is periodic. A heartbeat is periodic.</p>
+
+  <p>The only sounds that escape the definition are silence, atonal noise with no pulse, and a single non-repeating event - a gong strike, a slammed door.</p>
+
+  <p>Parliament outlawed periodicity in time. They criminalised a mathematical structure as old as rhythm itself.</p>
+
+  <p>Written as an equation, the Act requires:</p>
+
+  <div class="equation">
+    \[ \forall \; T > 0, \; \forall \; n \in \mathbb{Z} : \; f(t) \neq f(t + nT) \]
+  </div>
+
+  <p>No function may equal itself at a later interval. That is the definition of an aperiodic function. It describes noise. It is the mathematical opposite of music. The law, taken literally, permits only chaos.</p>
+
+  <p>It was unenforceable - which is why it was used selectively, mostly against travellers and free parties, never against authorised events playing the same music at the same tempo.</p>
+
+  <p class="standout">Parliament didn't outlaw a genre. They outlawed the concept of a beat. You cannot arrest a prime number.</p>
+
+  <p><a href="castlemorton.html" class="back">&larr;&ensp;Back to Castlemorton</a></p>
+
+  <footer>
+    <p>Published by Dream Radio.<br>
+    Groucho Jones is the pen name of
+    <a href="https://sjones.bio/">Steven Jones</a>.<br>
+    Fremantle, Western Australia.</p>
+  </footer>
+
+</div>
+</body>
+</html>
