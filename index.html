@@ -307,9 +307,9 @@
 
   <p>New books and chapters, by email. Nothing else, ever.</p>
 
-  <div class="list-form">
-    <input type="email" placeholder="your@email" aria-label="Email address">
-    <button type="button">Join</button>
+  <div class="list-form" id="list-form">
+    <input type="email" id="list-email" placeholder="your@email" aria-label="Email address">
+    <button type="button" id="list-btn" onclick="joinList()">Join</button>
   </div>
 
   <hr>
@@ -350,6 +350,31 @@
     }
     document.getElementById("spiralPath").setAttribute("d", d);
   })();
+
+  function joinList() {
+    var email = document.getElementById("list-email");
+    var btn = document.getElementById("list-btn");
+    if (!email.value || !email.value.includes("@")) return;
+    btn.textContent = "...";
+    btn.disabled = true;
+    fetch("https://formspree.io/f/xykaoynq", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ email: email.value })
+    }).then(function (r) {
+      if (r.ok) {
+        btn.textContent = "Thanks";
+        email.value = "";
+        email.disabled = true;
+      } else {
+        btn.textContent = "Error";
+        btn.disabled = false;
+      }
+    }).catch(function () {
+      btn.textContent = "Error";
+      btn.disabled = false;
+    });
+  }
 </script>
 </body>
 </html>
